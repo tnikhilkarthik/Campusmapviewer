@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Swing Campus Map Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Map Viewer</h1>
+        <p>Interactive Java Swing-Based Navigation System</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Navigate Your Campus with Ease</h2>
+            <button id="downloadBtn">Download Application</button>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Interactive Map</h3>
+                <p>Zoom, pan, and explore campus buildings</p>
+            </div>
+            <div class="feature">
+                <h3>Building Search</h3>
+                <p>Find locations quickly with search functionality</p>
+            </div>
+            <div class="feature">
+                <h3>Route Planning</h3>
+                <p>Get directions between campus locations</p>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2>Application Preview</h2>
+            <div class="map-container">
+                <canvas id="mapCanvas" width="600" height="400"></canvas>
+                <div class="controls">
+                    <button onclick="zoomIn()">Zoom In</button>
+                    <button onclick="zoomOut()">Zoom Out</button>
+                    <button onclick="resetView()">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Campus Map Viewer - Java Swing Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
